@@ -1,17 +1,15 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
   CloudUploadIcon,
-  CogIcon,
   LockClosedIcon,
   MenuIcon,
   RefreshIcon,
-  ServerIcon,
-  ShieldCheckIcon,
   XIcon,
 } from '@heroicons/react/outline'
-import { ChevronRightIcon, ExternalLinkIcon } from '@heroicons/react/solid'
+import { ChevronRightIcon } from '@heroicons/react/solid'
 
 const navigation = [
   { name: 'Events', href: '#' },
@@ -20,17 +18,14 @@ const navigation = [
 const features = [
   {
     name: 'Instant Registration',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi vitae lobortis.',
     icon: CloudUploadIcon,
   },
   {
     name: 'Secure Payments',
-    description: 'Qui aut temporibus nesciunt vitae dicta repellat sit dolores pariatur. Temporibus qui illum aut.',
     icon: LockClosedIcon,
   },
   {
     name: 'Detailed Event Info',
-    description: 'Rerum quas incidunt deleniti quaerat suscipit mollitia. Amet repellendus ut odit dolores qui.',
     icon: RefreshIcon,
   }
 ]
@@ -160,18 +155,17 @@ function App() {
                       <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full">
                         We're recruiting
                       </span>
-                      <span className="ml-4 text-sm">Visit organisers page</span>
+                      <span className="ml-4 text-sm">See Organisers page</span>
                       <ChevronRightIcon className="ml-2 w-5 h-5 text-gray-500" aria-hidden="true" />
                     </a>
                     <h1 className="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
                       <span className="block">A better way to</span>
                       <span className="pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5">
-                        enjoy chess
+                        discover chess
                       </span>
                     </h1>
                     <p className="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
-                      Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit
-                      sunt amet fugiat veniam occaecat fugiat.
+                      
                     </p>
                     <div className="mt-10 sm:mt-12">
                       <form action="#" className="sm:max-w-xl sm:mx-auto lg:mx-0">
@@ -197,7 +191,7 @@ function App() {
                           </div>
                         </div>
                         <p className="mt-3 text-sm text-gray-300 sm:mt-4">
-                          All members get unlimited access to the latest tournaments and past event results. All completely free.{' '}
+                          All players get unlimited access to the latest tournaments and past event results. All completely free.{' '}
                           <a href="#" className="font-medium text-white">
                             terms of service
                           </a>
@@ -225,13 +219,12 @@ function App() {
           {/* Feature section with grid */}
           <div className="relative bg-white py-16 sm:py-24 lg:py-32">
             <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-              <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">Enjoy the best</h2>
+              <h2 className="text-base font-semibold tracking-wider text-cyan-600 uppercase">Built For Chessplayers</h2>
               <p className="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
-                Find all the latest chess anywhere!
+                Never Miss A Move
               </p>
-              <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-                Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper
-                malesuada. Eleifend condimentum id viverra nulla.
+              <p className="mt-5 max-w-prose mx-auto text-lg text-gray-500">
+                Effortlessly register for your favourite events
               </p>
               <div className="mt-12">
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -245,7 +238,6 @@ function App() {
                             </span>
                           </div>
                           <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">{feature.name}</h3>
-                          <p className="mt-5 text-base text-gray-500">{feature.description}</p>
                         </div>
                       </div>
                     </div>
